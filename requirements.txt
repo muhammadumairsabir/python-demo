@@ -6,3 +6,4 @@ Werkzeug==1.0.0
 xmlrunner
 coverage==7.1.0
 Click==7.0
+pylint
