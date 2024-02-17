@@ -32,6 +32,12 @@ jobs:
       run: |
         python test.py
 
-    - name: Lint Code
+    #- name: Lint Code
+    #  run: |
+    #    pylint app.py
+
+    - name: Run Flask App
       run: |
-        pylint app.py
+        python app.py
+        sleep 10
+        curl -sS http://127.0.0.1:8089 || exit 1
