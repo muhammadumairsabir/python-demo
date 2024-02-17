@@ -17,7 +17,7 @@ jobs:
     - name: Setup up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.X'
+        python-version: '3.11.6'
 
     - name: Check Python Version
       run: |
